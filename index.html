@@ -164,9 +164,12 @@
     .nav-logo {
       font-family: var(--font-serif);
       font-size: 1.3rem;
-      color: var(--bark);
+      color: #fff;
+      transition: color .35s;
     }
-    .nav-logo span { color: var(--clay); }
+    .nav-logo span { color: var(--gold); transition: color .35s; }
+    .nav.scrolled .nav-logo { color: var(--bark); }
+    .nav.scrolled .nav-logo span { color: var(--clay); }
 
     .nav-links {
       display: flex;
@@ -177,10 +180,12 @@
       font-size: .875rem;
       font-weight: 600;
       letter-spacing: .06em;
-      color: var(--bark);
+      color: #fff;
       transition: color .2s;
     }
-    .nav-links a:hover { color: var(--clay); }
+    .nav.scrolled .nav-links a { color: var(--bark); }
+    .nav-links a:hover { color: var(--gold); }
+    .nav.scrolled .nav-links a:hover { color: var(--clay); }
 
     .nav-cta {
       background: var(--clay);
@@ -204,10 +209,11 @@
     .nav-toggle span {
       display: block;
       width: 24px; height: 2px;
-      background: var(--bark);
+      background: #fff;
       border-radius: 2px;
-      transition: transform .3s, opacity .3s;
+      transition: transform .3s, opacity .3s, background .35s;
     }
+    .nav.scrolled .nav-toggle span { background: var(--bark); }
 
     /* Mobile nav */
     @media (max-width: 700px) {
@@ -733,6 +739,21 @@
       align-items: start;
     }
 
+    .resy-widget-wrap {
+      background: var(--cream);
+      border-radius: calc(var(--radius) * 1.5);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .resy-widget-wrap .resy-button {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+
     .contact-info h2 { margin-bottom: 1rem; }
     .contact-info p { color: var(--stone); font-size: 1.05rem; margin-bottom: 2rem; }
 
@@ -1046,7 +1067,7 @@
 
         <!-- Starters -->
         <article class="menu-card visible" data-tab="starters">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag veg">Vegan</span></div>
             <h3>Spring Pea Crostini</h3>
@@ -1059,7 +1080,7 @@
         </article>
 
         <article class="menu-card visible" data-tab="starters">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1551183053-bf91798d792b?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag new">New</span></div>
             <h3>Burrata & Stone Fruit</h3>
@@ -1072,7 +1093,7 @@
         </article>
 
         <article class="menu-card visible" data-tab="starters">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1534482421-64566f976cfa?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag spicy">Spicy</span></div>
             <h3>Charred Shishito Peppers</h3>
@@ -1086,7 +1107,7 @@
 
         <!-- Mains -->
         <article class="menu-card" data-tab="mains">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag new">Chef's Pick</span></div>
             <h3>Wood-Fired Bavette Steak</h3>
@@ -1099,7 +1120,7 @@
         </article>
 
         <article class="menu-card" data-tab="mains">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"></div>
             <h3>Pan-Seared Halibut</h3>
@@ -1112,7 +1133,7 @@
         </article>
 
         <article class="menu-card" data-tab="mains">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1476124369491-e7adec5a1e0d?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1476124369491-e7adec5a1e0d?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat; background-color:#c8a87a;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag veg">Vegetarian</span></div>
             <h3>Wild Mushroom Risotto</h3>
@@ -1126,7 +1147,7 @@
 
         <!-- Sides -->
         <article class="menu-card" data-tab="sides">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1445282768818-728615cc910a?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag veg">Vegan</span></div>
             <h3>Roasted Heirloom Carrots</h3>
@@ -1139,7 +1160,7 @@
         </article>
 
         <article class="menu-card" data-tab="sides">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1518013431117-eb1465fa5aba?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1539136788836-5699e78bfc75?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"></div>
             <h3>Smashed Duck Fat Potatoes</h3>
@@ -1153,7 +1174,7 @@
 
         <!-- Desserts -->
         <article class="menu-card" data-tab="desserts">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat; background-color:#f5e8d5;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag new">Signature</span></div>
             <h3>Rosewood Honey Panna Cotta</h3>
@@ -1166,7 +1187,7 @@
         </article>
 
         <article class="menu-card" data-tab="desserts">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat; background-color:#3d2b1f;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"></div>
             <h3>Valrhona Chocolate Fondant</h3>
@@ -1180,7 +1201,7 @@
 
         <!-- Drinks -->
         <article class="menu-card" data-tab="drinks">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1609951651556-5334e2706168?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat; background-color:#8b3a3a;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag new">Staff Pick</span></div>
             <h3>Garden Negroni</h3>
@@ -1193,7 +1214,7 @@
         </article>
 
         <article class="menu-card" data-tab="drinks">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1563227812-0eb4d4b56bbf?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat; background-color:#d0eee0;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag veg">Non-Alcoholic</span></div>
             <h3>Rosewood Shrub Spritz</h3>
@@ -1352,84 +1373,34 @@
           </div>
         </div>
 
-        <div class="contact-form fade-up" id="contactFormWrap">
-          <h3 class="form-title">Reserve Your Table</h3>
-          <form id="contactForm" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname" placeholder="Jane" required />
-              </div>
-              <div class="form-group">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname" placeholder="Smith" required />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="jane@email.com" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="date">Preferred Date</label>
-                <input type="date" id="date" name="date" required />
-              </div>
-              <div class="form-group">
-                <label for="time">Preferred Time</label>
-                <select id="time" name="time" required>
-                  <option value="" disabled selected>Select time</option>
-                  <option>5:00 PM</option>
-                  <option>5:30 PM</option>
-                  <option>6:00 PM</option>
-                  <option>6:30 PM</option>
-                  <option>7:00 PM</option>
-                  <option>7:30 PM</option>
-                  <option>8:00 PM</option>
-                  <option>8:30 PM</option>
-                  <option>9:00 PM</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="guests">Party Size</label>
-                <select id="guests" name="guests" required>
-                  <option value="" disabled selected>Guests</option>
-                  <option>1</option><option>2</option><option>3</option>
-                  <option>4</option><option>5</option><option>6</option>
-                  <option>7</option><option>8+</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="occasion">Occasion</label>
-                <select id="occasion" name="occasion">
-                  <option value="">None / General</option>
-                  <option>Birthday</option>
-                  <option>Anniversary</option>
-                  <option>Business Dinner</option>
-                  <option>Date Night</option>
-                  <option>Other</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="notes">Special Requests / Dietary Notes</label>
-              <textarea id="notes" name="notes" placeholder="Allergies, dietary restrictions, high chair needed, etc."></textarea>
-            </div>
-            <button type="submit" class="form-submit">Request Reservation</button>
-            <p class="form-note">We'll confirm your booking by email within 24 hours. For parties of 8+, please call us directly.</p>
-          </form>
-          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
-            <div class="check"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="var(--moss)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg></div>
-            <h3>Reservation Request Sent!</h3>
-            <p>Thank you — we'll confirm your table within 24 hours. See you soon at Rosewood Kitchen.</p>
-          </div>
+        <!-- Resy booking widget -->
+        <div class="resy-widget-wrap fade-up">
+          <!-- Load the Resy button widget script once -->
+          <script type="text/javascript">
+            !function(d,s){
+              var js,fjs=d.getElementsByTagName(s)[0];
+              if(!d.getElementById('resy-button-sdk')){
+                js=d.createElement(s);
+                js.id='resy-button-sdk';
+                js.src='https://widgets.resy.com/dist/button/index.js';
+                js.async=true;
+                fjs.parentNode.insertBefore(js,fjs);
+              }
+            }(document,'script');
+          </script>
+          <!-- Replace data-venue-id and data-api-key with your Resy credentials -->
+          <a href="https://resy.com"
+             class="resy-button"
+             data-venue-id="ROSEWOOD-KITCHEN-VENUE-ID"
+             data-api-key="YOUR-RESY-API-KEY"
+             data-color-dark-mode="#3d2b1f"
+             data-color-primary="#c8714a"
+             data-color-primary-dark="#a85a37">
+            Reserve a Table
+          </a>
+          <p style="font-size:.78rem; color:var(--stone); margin-top:1rem; text-align:center;">
+            Powered by <a href="https://resy.com" target="_blank" rel="noopener" style="color:var(--clay);">Resy</a> &mdash; instant confirmation, no hold times.
+          </p>
         </div>
       </div>
     </div>
@@ -1545,26 +1516,6 @@
       });
     });
 
-    /* ── Contact form ────────────────────────────────── */
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      const form    = this;
-      const success = document.getElementById('formSuccess');
-      // Basic required field validation
-      const required = form.querySelectorAll('[required]');
-      let valid = true;
-      required.forEach(field => {
-        field.style.borderColor = '';
-        if (!field.value.trim()) {
-          field.style.borderColor = '#c0392b';
-          valid = false;
-        }
-      });
-      if (!valid) return;
-      form.style.display = 'none';
-      success.style.display = 'block';
-    });
-
     /* ── Intersection Observer: fade-up ─────────────── */
     const fadeEls = document.querySelectorAll('.fade-up');
     if ('IntersectionObserver' in window) {
@@ -1581,12 +1532,6 @@
       fadeEls.forEach(el => el.classList.add('in-view'));
     }
 
-    /* ── Set min date on reservation form to today ─── */
-    const dateInput = document.getElementById('date');
-    if (dateInput) {
-      const today = new Date().toISOString().split('T')[0];
-      dateInput.min = today;
-    }
   </script>
 
 </body>
