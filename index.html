@@ -238,7 +238,7 @@
       overflow: hidden;
       background:
         linear-gradient(160deg, rgba(61,43,31,.62) 0%, rgba(90,107,75,.50) 100%),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='800' height='600' fill='%23c8714a'/%3E%3Ccircle cx='200' cy='150' r='180' fill='%23a85a37' opacity='.6'/%3E%3Ccircle cx='600' cy='400' r='220' fill='%235a6b4b' opacity='.5'/%3E%3Ccircle cx='400' cy='300' r='120' fill='%23d4a843' opacity='.3'/%3E%3C/svg%3E") center / cover no-repeat;
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=85") center / cover no-repeat;
     }
 
     /* Decorative grain overlay */
@@ -408,13 +408,8 @@
       width: 100%;
       aspect-ratio: 4/5;
       border-radius: 180px 180px var(--radius) var(--radius);
-      background:
-        linear-gradient(135deg, var(--moss) 0%, var(--clay) 100%);
+      background: linear-gradient(135deg, var(--moss) 0%, var(--clay) 100%) center / cover no-repeat;
       overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 6rem;
     }
 
     .about-img-badge {
@@ -467,7 +462,7 @@
       padding: 1.25rem 1rem;
       text-align: center;
     }
-    .pillar-icon { font-size: 1.75rem; margin-bottom: .5rem; }
+    .pillar-icon { margin-bottom: .5rem; display: flex; justify-content: center; color: var(--clay); }
     .pillar h4 {
       font-size: .82rem;
       font-weight: 700;
@@ -838,7 +833,7 @@
       text-align: center;
       padding: 2rem 1rem;
     }
-    .form-success .check { font-size: 3rem; margin-bottom: 1rem; }
+    .form-success .check { margin-bottom: 1rem; display: flex; justify-content: center; }
     .form-success h3 { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: .5rem; }
     .form-success p { color: var(--stone); }
 
@@ -995,7 +990,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-visual fade-up">
-          <div class="about-img-main">🌿</div>
+          <div class="about-img-main" style="background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"></div>
           <div class="about-img-badge">
             <strong>12</strong>
             <small>Years of<br>Craft</small>
@@ -1010,17 +1005,17 @@
           <p>Today, we work with over 20 local farms within 100 miles of Maplewood — changing our menu with the seasons and letting the land lead the way. Every dish is a conversation between soil, sky, and the hands that cooked it.</p>
           <div class="about-pillars">
             <div class="pillar">
-              <div class="pillar-icon">🌱</div>
+              <div class="pillar-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12C12 12 7 9 7 5a5 5 0 0 1 10 0c0 4-5 7-5 7z"/></svg></div>
               <h4>Local Farms</h4>
               <p>20+ partner farms within 100 miles</p>
             </div>
             <div class="pillar">
-              <div class="pillar-icon">🔥</div>
+              <div class="pillar-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div>
               <h4>Wood Fired</h4>
               <p>All proteins grilled over live oak</p>
             </div>
             <div class="pillar">
-              <div class="pillar-icon">🍷</div>
+              <div class="pillar-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8M12 11v11M6 2h12l-3 9H9L6 2z"/></svg></div>
               <h4>Natural Wines</h4>
               <p>Biodynamic & low-intervention cellar</p>
             </div>
@@ -1051,7 +1046,7 @@
 
         <!-- Starters -->
         <article class="menu-card visible" data-tab="starters">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#d4e8c2,#a8c878)">🥗</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag veg">Vegan</span></div>
             <h3>Spring Pea Crostini</h3>
@@ -1064,7 +1059,7 @@
         </article>
 
         <article class="menu-card visible" data-tab="starters">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#f5e6c8,#e8c87a)">🧀</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1551183053-bf91798d792b?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag new">New</span></div>
             <h3>Burrata & Stone Fruit</h3>
@@ -1077,7 +1072,7 @@
         </article>
 
         <article class="menu-card visible" data-tab="starters">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#fde8d8,#f4a070)">🍲</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1534482421-64566f976cfa?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag spicy">Spicy</span></div>
             <h3>Charred Shishito Peppers</h3>
@@ -1091,7 +1086,7 @@
 
         <!-- Mains -->
         <article class="menu-card" data-tab="mains">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#f0d5bb,#c8714a)">🥩</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag new">Chef's Pick</span></div>
             <h3>Wood-Fired Bavette Steak</h3>
@@ -1104,7 +1099,7 @@
         </article>
 
         <article class="menu-card" data-tab="mains">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#d0e8f5,#7ab8d8)">🐟</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"></div>
             <h3>Pan-Seared Halibut</h3>
@@ -1117,7 +1112,7 @@
         </article>
 
         <article class="menu-card" data-tab="mains">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#e8f0d5,#8dab5a)">🍄</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1476124369491-e7adec5a1e0d?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag veg">Vegetarian</span></div>
             <h3>Wild Mushroom Risotto</h3>
@@ -1131,7 +1126,7 @@
 
         <!-- Sides -->
         <article class="menu-card" data-tab="sides">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#f5f0d5,#d4c060)">🫛</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag veg">Vegan</span></div>
             <h3>Roasted Heirloom Carrots</h3>
@@ -1144,7 +1139,7 @@
         </article>
 
         <article class="menu-card" data-tab="sides">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#f0d8c8,#c8906a)">🥔</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1518013431117-eb1465fa5aba?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"></div>
             <h3>Smashed Duck Fat Potatoes</h3>
@@ -1158,7 +1153,7 @@
 
         <!-- Desserts -->
         <article class="menu-card" data-tab="desserts">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#f5e8d5,#d4945a)">🍮</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag new">Signature</span></div>
             <h3>Rosewood Honey Panna Cotta</h3>
@@ -1171,7 +1166,7 @@
         </article>
 
         <article class="menu-card" data-tab="desserts">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#3d2b1f,#6b3a25)">🍫</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"></div>
             <h3>Valrhona Chocolate Fondant</h3>
@@ -1185,7 +1180,7 @@
 
         <!-- Drinks -->
         <article class="menu-card" data-tab="drinks">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#f5d5d5,#e07070)">🍷</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1609951651556-5334e2706168?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag new">Staff Pick</span></div>
             <h3>Garden Negroni</h3>
@@ -1198,7 +1193,7 @@
         </article>
 
         <article class="menu-card" data-tab="drinks">
-          <div class="menu-card-img" style="background:linear-gradient(135deg,#e8f5f0,#60c090)">🌿</div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1563227812-0eb4d4b56bbf?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag veg">Non-Alcoholic</span></div>
             <h3>Rosewood Shrub Spritz</h3>
@@ -1230,7 +1225,7 @@
           <div class="stars">★★★★★</div>
           <blockquote>"Rosewood Kitchen is the kind of place you dream about — where every bite feels intentional and every server actually knows the food. The burrata was transcendent."</blockquote>
           <div class="testi-author">
-            <div class="testi-avatar" style="background:#e8d5c5">👩</div>
+            <div class="testi-avatar" style="background:#e8d5c5; font-family:var(--font-serif); font-size:.95rem; font-weight:700; color:var(--bark);">P</div>
             <div>
               <div class="testi-name">Priya M.</div>
               <div class="testi-meta">Maplewood, NJ · Yelp Elite</div>
@@ -1241,7 +1236,7 @@
           <div class="stars">★★★★★</div>
           <blockquote>"We celebrated our anniversary here and were blown away. The tasting menu is a journey, the wine pairings are inspired, and the atmosphere is warm without being stuffy."</blockquote>
           <div class="testi-author">
-            <div class="testi-avatar" style="background:#d5e5c5">👨</div>
+            <div class="testi-avatar" style="background:#d5e5c5; font-family:var(--font-serif); font-size:.95rem; font-weight:700; color:var(--bark);">JC</div>
             <div>
               <div class="testi-name">James & Clara T.</div>
               <div class="testi-meta">South Orange · Google Review</div>
@@ -1252,7 +1247,7 @@
           <div class="stars">★★★★★</div>
           <blockquote>"Chef Mara came out to say hello and spent five minutes telling us about the farm the mushrooms came from. That is what farm-to-table actually means. Remarkable."</blockquote>
           <div class="testi-author">
-            <div class="testi-avatar" style="background:#d5c5e5">🧑</div>
+            <div class="testi-avatar" style="background:#d5c5e5; font-family:var(--font-serif); font-size:.95rem; font-weight:700; color:var(--bark);">A</div>
             <div>
               <div class="testi-name">Alex R.</div>
               <div class="testi-meta">NYC foodie · TripAdvisor</div>
@@ -1286,28 +1281,28 @@
           <h3>Location &amp; Contact</h3>
           <div class="location-detail">
             <div class="loc-row">
-              <div class="loc-icon">📍</div>
+              <div class="loc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clay)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
               <div>
                 <strong>Address</strong>
                 <p>418 Rosewood Lane, Maplewood, NJ 07040</p>
               </div>
             </div>
             <div class="loc-row">
-              <div class="loc-icon">📞</div>
+              <div class="loc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clay)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
               <div>
                 <strong>Phone</strong>
                 <p><a href="tel:+15553849200" style="color:var(--clay)">(555) 384-9200</a></p>
               </div>
             </div>
             <div class="loc-row">
-              <div class="loc-icon">✉️</div>
+              <div class="loc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clay)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
               <div>
                 <strong>Email</strong>
                 <p><a href="mailto:hello@rosewoodkitchen.example.com" style="color:var(--clay)">hello@rosewoodkitchen.example.com</a></p>
               </div>
             </div>
             <div class="loc-row">
-              <div class="loc-icon">🚗</div>
+              <div class="loc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clay)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
               <div>
                 <strong>Parking</strong>
                 <p>Free lot behind the building. Street parking available on Oak St.</p>
@@ -1315,7 +1310,7 @@
             </div>
           </div>
           <div class="map-placeholder" role="img" aria-label="Map placeholder — Maplewood, NJ">
-            <div class="map-icon">🗺️</div>
+            <div class="map-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--stone)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div>
             <p>418 Rosewood Lane, Maplewood NJ</p>
             <a href="https://maps.google.com/?q=Maplewood+NJ" target="_blank" rel="noopener" style="color:var(--clay); font-size:.85rem; font-weight:600;">Open in Google Maps →</a>
           </div>
@@ -1334,21 +1329,21 @@
           <p>We'd love to host you. Fill in the form and we'll confirm your table within 24 hours. For same-day reservations, please call us directly.</p>
           <div class="contact-links">
             <a href="tel:+15553849200" class="contact-link">
-              <div class="contact-link-icon">📞</div>
+              <div class="contact-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clay)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
               <div>
                 <strong style="display:block;">(555) 384-9200</strong>
                 <span style="font-size:.82rem; color:var(--stone);">Call for same-day bookings</span>
               </div>
             </a>
             <a href="mailto:hello@rosewoodkitchen.example.com" class="contact-link">
-              <div class="contact-link-icon">✉️</div>
+              <div class="contact-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clay)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
               <div>
                 <strong style="display:block;">hello@rosewoodkitchen.example.com</strong>
                 <span style="font-size:.82rem; color:var(--stone);">We reply within 24 hours</span>
               </div>
             </a>
             <a href="https://instagram.com/rosewoodkitchen" target="_blank" rel="noopener" class="contact-link">
-              <div class="contact-link-icon">📸</div>
+              <div class="contact-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clay)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
               <div>
                 <strong style="display:block;">@rosewoodkitchen</strong>
                 <span style="font-size:.82rem; color:var(--stone);">Follow for seasonal updates</span>
@@ -1431,7 +1426,7 @@
             <p class="form-note">We'll confirm your booking by email within 24 hours. For parties of 8+, please call us directly.</p>
           </form>
           <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
-            <div class="check">🌿</div>
+            <div class="check"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="var(--moss)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg></div>
             <h3>Reservation Request Sent!</h3>
             <p>Thank you — we'll confirm your table within 24 hours. See you soon at Rosewood Kitchen.</p>
           </div>
@@ -1448,9 +1443,9 @@
           <div class="footer-logo">Rose<span>wood</span> Kitchen</div>
           <p>A farm-to-table restaurant rooted in community, craft, and the belief that honest food feeds the soul.</p>
           <div class="footer-social">
-            <a href="https://instagram.com/rosewoodkitchen" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">📸</a>
-            <a href="https://facebook.com/rosewoodkitchen" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">🔵</a>
-            <a href="https://twitter.com/rosewoodkitchen" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter/X">🐦</a>
+            <a href="https://instagram.com/rosewoodkitchen" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://facebook.com/rosewoodkitchen" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://twitter.com/rosewoodkitchen" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter/X"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
           </div>
         </div>
         <div class="footer-col">
