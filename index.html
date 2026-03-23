@@ -584,7 +584,6 @@
     .menu-card-footer {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       margin-top: 1rem;
       padding-top: .75rem;
       border-top: 1px solid var(--warm);
@@ -595,20 +594,7 @@
       color: var(--clay);
       font-weight: bold;
     }
-    .add-btn {
-      width: 2rem; height: 2rem;
-      border-radius: 50%;
-      background: var(--clay);
-      color: #fff;
-      border: none;
-      font-size: 1.2rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background .2s, transform .15s;
-    }
-    .add-btn:hover { background: var(--clay-dk); transform: scale(1.1); }
+    .add-btn { display: none; }
 
     .menu-cta-wrap { text-align: center; margin-top: 2.5rem; }
 
@@ -1133,7 +1119,7 @@
         </article>
 
         <article class="menu-card" data-tab="mains">
-          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1476124369491-e7adec5a1e0d?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat; background-color:#c8a87a;"></div>
+          <div class="menu-card-img" style="background:url('https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&h=450&q=80') center/cover no-repeat; background-color:#c8a87a;"></div>
           <div class="menu-card-body">
             <div class="menu-card-tags"><span class="tag veg">Vegetarian</span></div>
             <h3>Wild Mushroom Risotto</h3>
@@ -1501,18 +1487,6 @@
           const show = card.dataset.tab === target;
           card.classList.toggle('visible', show);
         });
-      });
-    });
-
-    /* ── Add to order button ─────────────────────────── */
-    document.querySelectorAll('.add-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.textContent = '✓';
-        btn.style.background = 'var(--moss)';
-        setTimeout(() => {
-          btn.textContent = '+';
-          btn.style.background = '';
-        }, 1500);
       });
     });
 
